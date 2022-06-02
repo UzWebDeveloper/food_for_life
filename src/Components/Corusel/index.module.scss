@@ -1,0 +1,75 @@
+
+.coruselWrapper {
+
+  * {
+    div, img {
+      outline: none;
+      border-radius: 50px;
+    }
+  }
+
+  .title {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #808285;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .box {
+    width: 400px !important;
+
+    z-index: 1000;
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+    padding: 42px 0;
+
+    img {
+      width: 400px !important;
+
+    }
+  }
+
+  .boxActive {
+    width: 400px !important;
+    margin-top: 50px;
+
+    img {
+      width: 400px !important;
+      opacity: .7;
+    }
+  }
+
+
+  .continer {
+    width: 1500px;
+    margin: 0 auto;
+  }
+
+  .slider {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    height: 500px;
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .continer {
+    width: 100% !important ;
+    margin: 0 auto;
+  }
+  .slider {
+    width: 100% !important ;
+    justify-content: space-between !important;
+    height: auto !important;
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+}

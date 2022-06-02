@@ -1,0 +1,150 @@
+.sectionWrapper {
+  width: 100%;
+  position: relative;
+
+  &::before {
+    background-image: url("../../App/Images/BgImage.png");
+    background-position: top right -800px;
+    background-repeat: no-repeat;
+    background-size: 2200px;
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .sectionTitle {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #808285;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .sectionContainer {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 100px;
+      padding-top: 50px;
+
+      .textBox {
+        width: 500px;
+        padding-right: 70px;
+
+        p {
+          color: #808285;
+          font-size: 20px;
+          font-weight: 700;
+          font-family: 'Nunito', sans-serif;
+          //line-height: 1.9;
+        }
+
+        &.right {
+          padding-left: 70px;
+          padding-right: 0;
+
+          p {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  .videoContainer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: column;
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 0;
+    }
+
+    .fullScreen {
+      width: 0;
+      height: 0;
+      position: relative;
+
+      button {
+        padding: 0;
+        position: absolute;
+        top: -50px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        opacity: .7;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        span {
+          margin: 0;
+        }
+
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .sectionTitle {
+    font-size: 40px !important;
+    letter-spacing: 1px;
+  }
+  .sectionContainer {
+    .box {
+      flex-direction: column;
+      column-gap: 0 !important;
+      padding: 20px !important;
+
+      img {
+        width: 100% !important;
+      }
+
+      .textBox {
+        width: 100% !important;
+        padding: 20px !important;
+
+        p {
+          font-size: 18px !important;
+          text-align: center !important;
+        }
+
+        &.right {
+          p {
+            text-align: center !important;
+          }
+        }
+      }
+    }
+  }
+  .videoContainer {
+    width: 90% !important;
+
+
+  }
+}
